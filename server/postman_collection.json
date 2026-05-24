@@ -1,0 +1,11 @@
+{
+  "info": {
+    "name": "APPLIASSIST API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    { "name": "Auth - Test", "request": { "method": "GET", "url": "http://localhost:5000/api/auth/test" } },
+    { "name": "Register Customer", "request": { "method": "POST", "header": [{"key":"Content-Type","value":"application/json"}], "body": { "mode": "raw","raw": "{\n  \"first_name\": \"John\",\n  \"email\": \"john@example.com\",\n  \"password\": \"pass123\"\n}" , "options": { "raw": { "language": "json" } } }, "url": "http://localhost:5000/api/auth/register-customer" } },
+    { "name": "Login", "request": { "method": "POST", "header": [{"key":"Content-Type","value":"application/json"}], "body": { "mode": "raw","raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"pass123\"\n}" , "options": { "raw": { "language": "json" } } }, "url": "http://localhost:5000/api/auth/login" } }
+  ]
+}

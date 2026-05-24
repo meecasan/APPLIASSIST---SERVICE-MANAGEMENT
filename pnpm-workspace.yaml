@@ -1,0 +1,6 @@
+packages:
+  - '.'
+  - "store-management"
+  - 'service-management'
+  - 'registration'
+  - 'shared'
